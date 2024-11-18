@@ -58,7 +58,7 @@ The project utilizes the following technologies:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/contact-management.git
+   git clone https://github.com/Ajayduddi/Contact-Management.git
    ```
 
 2. **Install Dependencies:**
