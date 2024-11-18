@@ -7,6 +7,7 @@ This project provides a React application for managing contacts, allowing users 
 This is a contact management application built with React for a user-friendly experience. It offers functionalities to:
 
 - **Add New Contacts:** Users can create new contact entries by providing essential details like name, email, phone number, company, and job title.
+
 - **View Contacts:**  A comprehensive table displays all contacts with sorting and pagination options, making it easier to navigate through large contact lists.
 - **Edit Contact Information:** Users can update existing contact information to maintain accurate and up-to-date records.
 - **Delete Contacts:**  Unnecessary or duplicate entries can be removed to keep the contact list clean and organized.
@@ -22,7 +23,7 @@ The project utilizes the following technologies:
 * **Singleton Pattern (loginService.js):** Ensures a single instance exists for handling authentication-related operations.
 * **Protected Routes (AuthGuard.js):** Utilizes the `AuthGuard` component to verify user authentication before rendering protected routes. 
 
-#### Technical Decisions for the Backend : 
+### Technical Decisions for the Backend : 
 
 * **Express:**  Express is a minimal and flexible Node.js web application framework that offers a robust set of features for building scalable web and mobile applications, including routing, middleware support, and a rich ecosystem of associated libraries.
 * **JWT (JSON Web Tokens):** Used for secure and stateless authentication. JWTs are signed tokens containing user information, which helps to authenticate the user on HTTP requests.
@@ -64,8 +65,10 @@ The project utilizes the following technologies:
    ```bash
    cd frontend
    npm install 
-   
-   // for backend
+   ```
+
+   for backend
+   ```bash 
    cd backend
    npm install
    ```
@@ -87,6 +90,12 @@ The project utilizes the following technologies:
    This will typically start the development server on port 400(http://localhost:400).
 - Copy the frontend development URL and update the `origin` and `Access-Control-Allow-Origin` sections in the `./src/app.js` file of the backend. After that restart the server.
  - Copy the backend development URL and update the `BASE_URL` section in `./src/constants/constant.js`. After that restart the server.
+
+5. **Demo Login**
+    ```text
+    Email : admin@gmail.com
+    Password : Admin@1234
+    ```
 
 
 ## Database Choice
