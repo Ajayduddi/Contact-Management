@@ -451,7 +451,9 @@ export default function Dashboard() {
                             </TableHead>
                             <TableBody>
                                 {rows.length == 0 ? <StyledTableCell>No data Found</StyledTableCell> :
-                                    rows.map((row, index) => (
+                                    (rowsPerPage > 0
+                                    ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                                    : rows).map((row, index) => (
                                         <StyledTableRow key={index}>
                                             <StyledTableCell>{index + 1}</StyledTableCell>
                                             <StyledTableCell scope="row">
